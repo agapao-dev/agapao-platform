@@ -31,6 +31,11 @@ app.post("/login", async (req, res) => {
       id: user.id,
       name: user.name,
       email: user.email
-    }
+    } 
+  app.get("/test-register", (req, res) => {
+  res.json({
+    message: "Backend prêt pour register 🚀"
+  });
+});
   });
 });
