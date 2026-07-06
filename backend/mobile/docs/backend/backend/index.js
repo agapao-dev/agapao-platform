@@ -6,7 +6,11 @@ app.use(express.json());
 app.get("/", (req, res) => {
   res.json({ message: "Agapaô API is running 🚀" });
 });
-
+app.get("/test-register", (req, res) => {
+  res.json({
+    message: "Backend prêt pour register 🚀"
+  });
+});
 const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, () => {
